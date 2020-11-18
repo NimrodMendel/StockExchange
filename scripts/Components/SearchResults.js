@@ -81,7 +81,7 @@ class SearchResult {
         }
 
         /* Link */
-        companyLink.href = `/company.html?symbol=${company.symbol}`;
+        companyLink.href = `https://nimrodmendel.github.io/StockExchange/company.html?symbol=${company.symbol}`;
         // Highlight text using regex
         let highlightedName = company.profile.companyName.replace(new RegExp(searchInput, 'gi'), (match) => `<span class="highlight">${match}</span>`);
         companyLink.innerHTML = `${highlightedName}.`;
